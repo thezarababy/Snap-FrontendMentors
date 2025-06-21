@@ -1,0 +1,49 @@
+.bg{
+    height: 510px;
+   
+}
+.main2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 200px 30px 200px;
+    
+}
+h1{
+    font-size: 68px;
+    line-height: 1;
+}
+p{
+    width: 70%;
+    color:#696969 ;
+}
+.tools{
+    margin-top: 60px;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+.tools-img{
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main2{
+   
+    flex-direction: column-reverse;
+    margin: 30px 50px;
+   }
+   h1{
+    
+   }
+   p{
+    
+    font-size: 30px;
+
+  
+   }
+   
+}
