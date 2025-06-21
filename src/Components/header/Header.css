@@ -1,0 +1,59 @@
+.main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right:40px ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color:#696969;
+    margin-right: 60px;
+    font-weight:900;
+    font-size: 13px;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 650;
+    color: black;
+}
+button{
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 9px;
+    border: 1px solid black;
+    color: #696969;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 650;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  
+   .hamburger{
+    display: block;
+    cursor: pointer;
+   height: 20px;
+   margin-left: 20em;
+   
+   }
+   .nav-links{
+    display: none;
+   }
+   .nav2{
+    display: none;
+   }
+   .responsive{
+    display: flex;
+    
+    align-items: center;
+   }
+}
