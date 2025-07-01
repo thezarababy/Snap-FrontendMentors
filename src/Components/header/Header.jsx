@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 // import hamburger from "../../assets/hamburger.png";
 
@@ -6,6 +6,17 @@ import "./Header.css";
 const Header = ()=>{
 const[counter,setCounter]=useState(0);
 const[show,setShow]=useState(false);
+//use effect runs after every render
+
+useEffect(()=>{
+
+    if (show){
+        let timer= setTimeout(()=>{
+            alert(`square root of ${counter}is ${Math.sqrt(counter)}`);
+        },2000);
+    }
+})
+    
 
 const increaseCounter = () => {
     setCounter(counter + 4);
@@ -58,9 +69,9 @@ const showNum=()=>{
             <button onClick={showNum}>
                 {show ? 'Hide' : 'Show'}
             </button>
-            <div>
+            
                {show && <div>{Math.sqrt(counter)}</div>}
-            </div>
+            
             </div>
 
 
