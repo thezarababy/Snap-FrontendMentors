@@ -14,7 +14,7 @@ const decreaseCounter=()=>{
     setCounter(counter-1);
 }
 const showNum=()=>{
-    setShow(true);
+    setShow(!show);
 }
 
 
@@ -56,7 +56,7 @@ const showNum=()=>{
                 decrease
             </button>
             <button onClick={showNum}>
-                show
+                {show ? 'Hide' : 'Show'}
             </button>
             <div>
                {show && <div>{Math.sqrt(counter)}</div>}
