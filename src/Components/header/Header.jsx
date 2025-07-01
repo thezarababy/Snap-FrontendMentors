@@ -14,9 +14,9 @@ const decreaseCounter=()=>{
     setCounter(counter-1);
 }
 const showNum=()=>{
-    setShow(true)
-
+    setShow(true);
 }
+
 
 
 
@@ -59,15 +59,14 @@ const showNum=()=>{
                 show
             </button>
             <div>
-                {Math.sqrt(counter)}
+               {show && <div>{Math.sqrt(counter)}</div>}
             </div>
             </div>
-        
-
 
 
 
         
     )
 }
+        
 export default Header;
